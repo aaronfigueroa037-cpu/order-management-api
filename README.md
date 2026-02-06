@@ -16,6 +16,22 @@ API patterns such as JWT authentication, protected routes, and admin-only access
 git clone https://github.com/your-username/order-management-api.git
 cd order-management-api
 
+## 🔐 Security & Production Readiness Notes
+
+This project is designed for local development and learning purposes.
+
+For a production deployment, the following improvements would be applied:
+
+- Environment variables (`.env`) for secrets (JWT secret key, database URL)
+- Token expiration and refresh token strategy
+- HTTPS enforcement
+- Rate limiting on authentication endpoints
+- Centralized logging and monitoring
+- Database migrations (Alembic)
+- Pagination for large result sets
+- Role-based access expansion (admin/editor/user)
+
+
 ## 🔐 Authentication Flow (JWT)
 
 This API uses **JWT (JSON Web Tokens)** for secure authentication and authorization.
